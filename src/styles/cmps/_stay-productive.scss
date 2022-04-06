@@ -1,0 +1,48 @@
+.stay-productive {
+    @include flex;
+    @media (max-width: 1335px) {
+        flex-direction: column;
+        padding: rem(140px) rem(20px);
+    }
+    @media (max-width: 701px) {
+        .productive-img {
+            width: 95%;
+        }
+    }
+    gap: rem(60px);
+    width: 100%;
+    padding: rem(140px) rem(100px);
+    .productive-text {
+        h2 {
+            font-size: rem(40px);
+            padding-inline-end: 25%;
+            line-height: rem(50px);
+            @media (max-width: 1335px) {
+                padding: 0;
+                font-size: rem(18px);
+                line-height: rem(24px);
+            }
+        }
+        p {
+            margin: rem(22px) 0;
+            @media (max-width: 1335px) {
+                font-size: rem(14px);
+            }
+        }
+        a {
+            @include flex (row, space-between);
+            width: max-content;
+            gap: rem(18px);
+            color: $cyan;
+            padding-bottom: rem(5px);
+            border-bottom: 1px solid $cyan;
+            cursor: pointer;
+            span {
+                line-height: 0;
+                img {
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}

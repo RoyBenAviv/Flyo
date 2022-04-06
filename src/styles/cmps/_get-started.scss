@@ -1,0 +1,12 @@
+.get-started {
+    @include flex(column, flex-start);
+    position: relative;
+    background-color: $intro-email;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.25);
+    top: 100px;
+    height: 275px;
+    button {
+        @include btn(rem(16px) rem(26px));
+    }
+}
